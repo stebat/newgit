@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Documento senza titolo</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  $("#header").click(function(){
+	  marginTop=$('#header').css('marginTop');
+	  
+	 if(marginTop!='0px'){
+	  $('#header').animate({'marginTop':'0px'});}
+	  
+	  else{$('#header').animate({'marginTop':'-160px'});}
+	
+	  })
+});
+
+</script>
+</head>
+
+<body>
+<div id="header" class="ui-widget-content">
+<ul id="nav">
+<li>about</li>
+<li>prodotti</li>
+<li>portfolio</li>
+<li>contatti</li>
+</ul>
+<h1>LOGO</h1>
+</div>
+
+</body>
+</html>
